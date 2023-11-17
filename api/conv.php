@@ -261,6 +261,44 @@
         body {
             margin-bottom: 60px;
         }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 80vh;
+                margin: 0;
+            }
+
+            main, section, article {
+                width: 80%;
+                max-width: 400px;
+                margin-bottom: 10px;
+            }
+
+            form {
+                padding: 20px;
+                box-sizing: border-box;
+                width: 100%;
+                margin-top: auto; /* Push the form to the vertical center */
+            }
+
+            footer {
+                height: 4rem;
+            }
+
+            footer p {
+                align-items: center;
+            }
+
+            footer a {
+                font-size: 8pt;
+            }
+        }
+
+
     </style>
     </style>
 </head>

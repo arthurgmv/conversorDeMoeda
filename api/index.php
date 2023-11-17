@@ -265,23 +265,29 @@
 
         @media only screen and (max-width: 600px) {
             body {
-                align-items: stretch;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 80vh;
+                margin: 0;
             }
 
             main, section, article {
+                width: 80%;
+                max-width: 400px;
                 margin-bottom: 10px;
             }
 
             form {
-                width: 80%;
-                max-width: 400px;
-                margin: 0 auto;
-                padding: 20px; /* Add padding to the form for better spacing */
-                box-sizing: border-box; /* Include padding in the total width */
+                padding: 20px;
+                box-sizing: border-box;
+                width: 100%;
+                margin-top: auto; /* Push the form to the vertical center */
             }
 
             footer {
-                height: 8rem;
+                height: 4rem;
             }
 
             footer p {
@@ -292,7 +298,6 @@
                 font-size: 8pt;
             }
         }
-
 
 
     </style>
