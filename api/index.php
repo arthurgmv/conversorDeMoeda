@@ -233,6 +233,68 @@
             font-size: 1em;
             background-color: rgba(0, 0, 0, 0);
         }
+
+        footer {
+            height: 6rem;
+            width: 100vw;
+            position: fixed;
+            bottom: 0;
+            background-color: #05030a;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center horizontally */
+            padding: 15px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: white;
+            font-size: 10pt;
+            text-decoration: none;
+            border-bottom: 1px solid #fff;
+            padding-bottom: 2px;
+        }
+
+        body {
+            margin-bottom: 60px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                align-items: stretch;
+            }
+
+            main, section, article {
+                margin-bottom: 10px;
+            }
+
+            form {
+                width: 80%;
+                max-width: 400px;
+                margin: 0 auto;
+                padding: 20px; /* Add padding to the form for better spacing */
+                box-sizing: border-box; /* Include padding in the total width */
+            }
+
+            footer {
+                height: 8rem;
+            }
+
+            footer p {
+                align-items: center;
+            }
+
+            footer a {
+                font-size: 8pt;
+            }
+        }
+
+
+
     </style>
 
 </head>
@@ -251,6 +313,15 @@
         <input type="submit" name="ConverterD" value="Converter">
     </form>
 </section>
+
+<footer>
+    <p style="align-items: center">Arthur Gabriel<br/>
+        <span style="display: flex">
+        <a href="https://github.com/arthurgmv" target="_blank">Github</a>
+        <a href="https://www.linkedin.com/in/arthur-gabriel-de-menezes-viana-1223a6239/" target="_blank">Linkedin</a>
+        </span>
+    </p>
+</footer>
 
 </body>
 </html>
